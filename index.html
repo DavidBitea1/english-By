@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>englishBy | Learn English</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="theStart.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="startWebsite.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="About.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https://discord.gg/4NHrXXCVFG">Discord</a>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="Company">
+                    <div>englishBy&trade;</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0001.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+
+
+                        <div class="subtitle">
+                            Have 100% guaranteed professional English teachers at your assistance with live English lessons to get you going!
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0002.jpg)";></div>"
+
+                    <div class="img-text-wrapper">
+
+                        <div class="subtitle">
+                            englishBy is a company which guarantees you perfect English language knowledge.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0003.jpg)";></div>"
+
+                    <div class="img-text-wrapper">
+
+                        <div class="subtitle">
+                            Join our engaging online English classes!
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0004.jpg)";></div>"
+
+                    <div class="img-text-wrapper">
+
+                        <div class="subtitle">
+                            Collaborate and make friends with other members, on our Discord Server, who are learning just like you!
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0005.jpg)";></div>"
+
+                    <div class="img-text-wrapper">
+
+                        <div class="subtitle">
+                            Begin your Career at englishBy, be a Volunteer with our Staff Team, further extending it!
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Learning0006.jpg)";></div>"
+
+                    <div class="img-text-wrapper">
+
+                        <div class="subtitle">
+                            Exceed beyond!
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+</html>
